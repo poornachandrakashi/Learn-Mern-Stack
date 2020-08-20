@@ -8,3 +8,6 @@ Next install nodeman
 If i get error during I run npm run server
 
 npm install nodemon --save-dev
+
+
+Create config folder to store Globle Values
