@@ -1,0 +1,10 @@
+Install Express
+npm init
+install our dependencies
+npm i express express-validator bcryptjs config gravatar jsonwebtoken mongoose request
+Next install nodeman
+
+
+If i get error during I run npm run server
+
+npm install nodemon --save-dev
