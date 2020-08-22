@@ -15,3 +15,9 @@ Create config folder to store Globle Values
 
 
 In order to create to interact with the database we need to have a model for each
+
+
+Install separate Body parser
+
+
+Using Express validator'
