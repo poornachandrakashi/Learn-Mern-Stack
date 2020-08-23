@@ -1,11 +1,11 @@
 const express = require('express');
-const router= express.Router();
+const router = express.Router();
 const gravatar = require('gravatar');
 const bcrypt = require('bcryptjs');
 const { check, validationResult } = require('express-validator/check');
 
 //Using Mong Model
-const User = require("../../models/User");
+const User = require('../../models/User');
 
 
 //@route       POST api/users
@@ -29,7 +29,7 @@ async (req,res) => {
     //See if User exits
         let user = await User.findOne({email});
         if (user){
-            res.status(400).json({ errors: [{msg: 'User alredy Exists'}]});
+            return res.status(400).json({ errors: [{msg: 'User alredy Exists'}]});
         }
 
 
